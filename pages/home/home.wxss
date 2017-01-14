@@ -1,6 +1,8 @@
 .container {
+  background: #f0f0f3;
   padding: 0;
-} 
+}
+
 .content-list {
   display: flex;
   flex-direction: column;
@@ -8,8 +10,22 @@
 
 .content-item {
   width: 100%;
-  background: orange;
-  padding: 40rpx;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  background: #fff;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 1px;
+}
+
+.add-button {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  padding: 10px;
+  background: #ffca28;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
 }
