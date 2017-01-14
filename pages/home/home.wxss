@@ -1,0 +1,15 @@
+.container {
+  padding: 0;
+} 
+.content-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-item {
+  width: 100%;
+  background: orange;
+  padding: 40rpx;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
