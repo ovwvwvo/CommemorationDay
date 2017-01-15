@@ -11,6 +11,7 @@ Page({
   },
 
   onLoad: function () {
+    console.log(this.data.time);
     this.setData({
       date: util.formatDate(new Date())
     })
@@ -46,7 +47,7 @@ Page({
       return;
     }
     var data = {};
-    wx.setStorageSync(Date.now(), data);
+    wx.setStorageSync('d' + Date.now(), this.data);
     wx.showToast({
       title: '添加成功',
       duration: 2000

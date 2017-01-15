@@ -2,7 +2,7 @@
 var util = require('../../utils/util.js')
 Page({
   data: {
-    datas: []
+    datas: ["111"]
   },
   itemClick: function (event) {
     wx.navigateTo({
@@ -15,10 +15,16 @@ Page({
     })
   },
   onLoad: function () {
-    this.setData({
-      datas: (wx.getStorageSync('logs') || []).map(function (data) {
-        return util.formatTime(new Date(data))
-      })
-    })
+    try {
+      var res = wx.getStorageInfoSync();
+      this.setData({
+        datas: (res.keys || []).map(function (key) {
+          var value = wx.getStorageSync(key);
+          return value.name;
+        })
+      });
+    } catch (e) {
+      // Do something when catch error
+    }
   }
 })
