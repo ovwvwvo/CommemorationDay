@@ -52,5 +52,6 @@ Page({
       title: '添加成功',
       duration: 2000
     })
+    wx.navigateBack();
   }
 })

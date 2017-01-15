@@ -5,9 +5,9 @@ Page({
     datas: ["111"]
   },
   itemClick: function (event) {
-    wx.navigateTo({
-      url: '../edit/edit'
-    })
+    // wx.navigateTo({
+    //   url: '../edit/edit'
+    // })
   },
   addClick: function (event) {
     wx.navigateTo({
@@ -15,6 +15,9 @@ Page({
     })
   },
   onLoad: function () {
+
+  },
+  onShow: function () {
     try {
       var res = wx.getStorageInfoSync();
       this.setData({
