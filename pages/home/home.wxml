@@ -1,6 +1,6 @@
-<image class="add-button" src="../../image/add.png" />
+<image class="add-button" bindtap="addClick" src="../../image/add.png" />
 <view class="container content-list">
   <block wx:for="{{datas}}" wx:for-item="data" wx:key="*this">
-    <text id="rawer-{{data}}" data-ovwvwvo="jiayaguang-{{data}}" class="content-item" bindtap="ItemClick">{{index + 1}}.{{data}}</text>
+    <text id="rawer-{{data}}" data-ovwvwvo="jiayaguang-{{data}}" class="content-item" bindtap="itemClick">{{index + 1}}.{{data}}</text>
   </block>
 </view>

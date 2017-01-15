@@ -1,0 +1,36 @@
+@import "../weui.wxss";
+
+.container {
+  align-items: flex-start;
+  padding-top: 0px;
+}
+
+.weui-cell {
+  width: 100%;
+  align-items: center;
+  padding: 40rpx;
+}
+
+.icon {
+  display: block;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.weui-time-input {
+  margin-left: 160rpx;
+}
+
+.weui-input {
+  margin-left: 40rpx;
+  font-size: 16px;
+}
+
+.mark {
+
+}
+
+.add-button {
+  width: 75%;
+  margin-top: 75rpx;
+}

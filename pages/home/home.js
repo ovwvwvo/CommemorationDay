@@ -4,10 +4,14 @@ Page({
   data: {
     datas: []
   },
-  ItemClick: function (event) {
-    console.log(event);
-    wx.showToast({
-      title: "success"
+  itemClick: function (event) {
+    wx.navigateTo({
+      url: '../edit/edit'
+    })
+  },
+  addClick: function (event) {
+    wx.navigateTo({
+      url: '../edit/edit'
     })
   },
   onLoad: function () {

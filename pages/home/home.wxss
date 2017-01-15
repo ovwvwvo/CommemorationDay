@@ -11,21 +11,19 @@
 .content-item {
   width: 100%;
   background: #fff;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-top: 1px;
+  padding-left: 45rpx;
+  padding-top: 45rpx;
+  padding-bottom: 45rpx;
+  margin-top: 1rpx;
 }
 
 .add-button {
   width: 30px;
   height: 30px;
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 60rpx;
+  bottom: 60rpx;
   padding: 10px;
   background: #ffca28;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
+  border-radius: 50%;
 }

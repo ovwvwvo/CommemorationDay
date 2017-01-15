@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="weui-cell weui-cell_input">
+    <image class="icon" src="../../image/name.png" background-size="cover" />
+    <input id="name" bindchange="bindChange" class="weui-input name" focus placeholder="恋爱纪念日" />
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <image class="icon" src="../../image/time.png" background-size="cover" />
+    <picker mode="date" value="{{date}}" start="1990-01-01" end="2100-12-31" bindchange="bindDateChange">
+      <view class="weui-date-input weui-input">{{date}}</view>
+    </picker>
+    <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+      <view class="weui-time-input weui-input">{{time}}</view>
+    </picker>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <image class="icon" src="../../image/location.png" background-size="cover" />
+    <input id="location" bindchange="bindChange" class="weui-input location" placeholder="地点" />
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <image class="icon" src="../../image/mark.png" background-size="cover" />
+    <input id="mark" bindchange="bindChange" class="weui-input mark" placeholder="备注" />
+  </view>
+  <button bindtap="add" type="primary" class="add-button">添加</button>
+</view>
